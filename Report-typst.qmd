@@ -17,11 +17,12 @@ params:
 # нужно расширение now
 # https://pkg.garrickadenbuie.com/quarto-now/
 #date: today
+# **{{< meta params.species >}}**
 ---
 
 Текст создан {{< modified "%d %B %Y" >}} года. 
 
-Рассматриваемый вид: **{{< meta params.species >}}**.
+Рассматриваемый вид: **`r params$species`**.
 
 ```{r}
 #| echo: false
